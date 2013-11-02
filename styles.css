@@ -1,0 +1,64 @@
+/* apply a natural box layout model to all elements 
+    from Paul Irish http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+*, *:before, *:after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+ }
+#calendarapp {
+    color:#666;
+}
+#times {
+    width:70px;
+    float:left;
+    margin-top:-5px;
+}
+#times > div {
+    height:30px;
+    padding-right:5px;
+    font-size:13px;
+    text-align:right;
+}
+#times > div:nth-child(even), 
+#times > div > span {
+    font-size:11px;
+}
+#events-wrapper {
+    height:720px;
+    width:600px;
+    background-color:#ECECEC;
+    padding:0 10px;
+    border: 1px solid #CCC;
+    overflow:hidden;
+}
+#events {
+    position:relative;
+}
+#events > div {
+    background-color:#FFF;
+    border:1px solid #CCC;
+    border-left:4px solid #4B6EA8;
+    position:absolute;
+    overflow:hidden;
+}
+.event-item > p {
+    margin:0;
+}
+p.event-title {
+    color:#4B6EA8;
+    font-size:15px;
+    padding:5px;
+}
+p.event-location {
+    font-size:13px;
+    padding:4px;
+}
+#footer {
+    margin:25px auto 20px;
+    color:#a6a6a6;
+    text-align:center;
+}
+#footer a {
+    color: inherit;
+}
